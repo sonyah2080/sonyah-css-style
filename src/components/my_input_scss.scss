@@ -1,3 +1,4 @@
+@import './color_def.scss';
 
 * {
   margin:0;
@@ -21,19 +22,19 @@
     font-size: 1rem;
     padding:12px 0;
     border: 0;
-    border-bottom: 1px solid #bcb5b9;
+    border-bottom: 1px solid $secondary;
     cursor: text;
     &:focus {
       //input에 focus가 갈 경우, 색 변경
       outline:none;
-      border-bottom: 1px solid #52BAD5;
+      border-bottom: 1px solid $primary;
     }
   }
 
   label {
     text-align: left;
     font-size: 0.75rem;
-    color:#bcb5b9;
+    color:$secondary;
   }
 
   //움직임에 애니메이션효과
@@ -67,6 +68,50 @@
 
   //focus가 될 경우 텍스트 색상 변경
   input:focus + label {
-    color: #52BAD5;
+    color: $primary;
+  }
+  //placeholder-shown은 https://codepen.io/sonyah/pen/BxqvwK 의 코드를 참고함. 사랑해요 codepen...
+}
+
+.btn {
+  padding:8px 16px;
+  font-size: 1rem;
+  border-radius: 4px;
+  border:1px solid $gray-500;
+  background: $white;
+  box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.16);
+
+  &:hover {
+    background: $gray-100;
+  }
+
+  &:active {
+    outline: none;
+    background: $gray-300;
+  }
+
+  &:focus {
+    outline: none;
+  }
+
+  &:disabled {
+    background: $gray-100;
+    border:1px solid $gray-200;
+    color:rgba(0, 0, 0, 0.16);
+    box-shadow: none;
+  }
+}
+
+.btn-primary{
+  padding:8px 16px;
+  font-size: 1rem;
+  border-radius: 4px;
+  border: 1px solid $primary;
+  background: $primary;
+  color:$white;
+  box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.16);
+
+  &:hover {
+    background: $primary-dark;
   }
 }

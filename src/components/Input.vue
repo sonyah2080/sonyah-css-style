@@ -1,15 +1,13 @@
 <template lang="html">
   <div class="container">
     <h2>Input</h2>
+    <div class="placeholder-show">
+      <input type="text" name="text" placeholder=" " />
+      <label for="text">text label</label>
+    </div>
 
-    <div class="placeholder-show">
-      <input type="email" name="email" placeholder=" " />
-      <label for="email">Email</label>
-    </div>
-    <div class="placeholder-show">
-      <input type="password" name="password" placeholder=" " />
-      <label for="password">Password</label>
-    </div>
+    <button class="btn">Button</button>
+    <button class="btn-primary btn">Button</button>
   </div>
 </template>
 
