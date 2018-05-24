@@ -6,6 +6,7 @@
       <label for="text">text label</label>
     </div>
 
+    <h2>Button</h2>
     <button class="btn">Button</button>
     <button class="btn-primary btn">Button</button>
   </div>
